@@ -14,3 +14,374 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.navbar-bg {
+  background-color: #fff;
+  box-shadow: -1px 1px 15px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px 1px 15px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px 1px 15px -8px rgba(0, 0, 0, 0.75);
+}
+.NavLogo{
+
+  width: 40px;
+  height: auto;
+}
+
+/* MENU */
+.hamburger {
+  width: 60px;
+  height: 60px;
+  margin: 0;
+  display: none;
+  float: right;
+}
+
+@media only screen and (max-width: 991px) {
+  .hamburger {
+    display: flex;
+  }
+}
+.hamburger-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.menu .bar1,
+.menu .bar2,
+.menu .bar3 {
+  width: 25px;
+  height: 4px;
+  background: #0caeeb;
+  transition: all 0.3s;
+}
+
+.hamburger-init:checked + .menu .bar1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-init:checked + .menu .bar2 {
+  opacity: 0;
+}
+
+.hamburger-init:checked + .menu .bar3 {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+/* menu end */
+
+.navbar-toggler {
+  float: right;
+}
+.mail-box {
+  color: #0caeeb;
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-right: 10px;
+}
+@media only screen and (max-width: 991px) {
+  .nav-symbol {
+    display: none;
+  }
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+  .nav-link {
+    background-color: #0caeeb;
+    margin-top: 5px;
+  }
+  .nav-link:hover {
+    background-color: #000;
+  }
+  .nav-text {
+    color: #fff;
+  }
+  .mailBox-hide {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .nav-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .nav-text {
+    color: rgb(75, 75, 75);
+  }
+  .nav-text:hover {
+    color: rgb(196, 196, 196);
+  }
+
+  .active a span {
+    color: rgb(196, 196, 196);
+    font-weight: bold;
+  }
+}
+
+/* Home */
+
+.main-page {
+  background-image: url("../public/3.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 4%;
+  padding-bottom: 2%;
+  padding-top: 8%;
+}
+.mainText {
+  color: rgb(75, 75, 75);
+  font-size: 3.5rem;
+  line-height: 93%;
+  margin-top: 20%;
+  margin-bottom: 5%;
+}
+.subText {
+  color: #0caeeb;
+  font-size: 1rem;
+  font-style: italic;
+}
+.MainImg {
+  width: 25rem;
+  height: auto;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 480px) {
+  .MainImg {
+    width: 80vw;
+    height: auto;
+    margin-top: 5%;
+  }
+
+  .mainText {
+    color: rgb(75, 75, 75);
+    font-size: 10vw;
+    line-height: 93%;
+    margin-top: 20%;
+    margin-bottom: 5%;
+  }
+}
+
+/* About */
+
+.About {
+  background-color: #0caeeb;
+  padding-top: 2%;
+}
+.AboutTitle {
+  font-size: 40px;
+  font-weight: bold;
+  padding-top: 2%;
+  color: #fff;
+  text-align: center;
+}
+
+.aboutImg {
+  width: 230px;
+  height: auto;
+  margin-bottom: 3%;
+  border-radius: 5%;
+}
+
+@media screen and (max-width: 991px) {
+  .aboutImg {
+    padding-top: 5%;
+    width: 230px;
+    height: auto;
+    margin-bottom: 3%;
+  }
+}
+
+.AboutText {
+  color: rgb(241, 241, 241);
+  font-size: 19px;
+  margin-top: 10%;
+  margin-left: 10%;
+  margin-right: 5%;
+  margin-bottom: 25%;
+  text-align: left;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+.IconSocial {
+  font-size: 30px;
+  color: #fff;
+}
+
+.IconSocial:hover {
+  font-size: 30px;
+  color: #000;
+}
+
+.IconCenter{
+
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+/* skills */
+
+.clients {
+  background-color: #fff;
+  padding-top: 5%;
+  padding-bottom: 10%;
+}
+.clientsTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(75, 75, 75);
+  text-align: center;
+}
+
+#clientsICON {
+  font-size: 25px;
+}
+
+.clientLOGO {
+  width: 110px;
+  height: auto;
+  margin-top: 20%;
+  padding-bottom: 5%;
+}
+@media screen and (max-width: 575px) {
+  .clientLOGO {
+    width: 110px;
+    height: auto;
+    margin-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+
+/* Projects */
+
+#projects {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(29, 29, 29);
+}
+.ProjectsTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+}
+.cardBox {
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  box-shadow: 3px 5px 0px 4px rgba(214, 214, 214, 0.13);
+  -webkit-box-shadow: 3px 5px 0px 4px rgba(214, 214, 214, 0.13);
+  -moz-box-shadow: 3px 5px 0px 4px rgba(214, 214, 214, 0.13);
+}
+.ViewLink{
+    margin-left: 3%;
+    text-decoration: none;
+    color: #0caeeb;
+}
+.ViewLink:hover{
+
+    color: #91d9f3;
+}
+
+/* Contact */
+
+.contactBOX {
+  margin: 5% 20% 10% 20%;
+}
+
+@media screen and (max-width: 700px) {
+  .contactBOX {
+    margin: 5% 10% 10% 10%;
+  }
+}
+.contactTitle {
+  font-size: 40px;
+  font-weight: bold;
+  color: #0caeeb;
+  text-align: center;
+  padding-top: 5%;
+}
+
+#contactICON {
+  font-size: 25px;
+}
+
+.form-control:focus {
+  border-color: #0caeeb;
+
+  box-shadow: inset 0 1px 1px rgba(168, 164, 164, 0.075), 0 0 4px #689397;
+}
+input[type="text"],
+input[type="email"],
+#textarecontact {
+  border: #0caeeb solid 2px;
+}
+.btnContact {
+  background-color: #0caeeb;
+  color: #fff;
+}
+.btnContact:hover {
+  border-color: #0caeeb;
+  color: #fff;
+}
+
+/* footer */
+
+.footer {
+  background-color: #000;
+  height: 3rem;
+}
+.copyRight {
+  font-size: 14px;
+  color: #fff;
+  padding-left: 2%;
+  padding-top: 1%;
+  float: left;
+}
+.Developer {
+  font-size: 14px;
+  padding-right: 2%;
+  padding-top: 1%;
+  color: #fff;
+  float: right;
+  font-style: italic;
+}
+
+@media screen and (max-width: 442px) {
+  .copyRight {
+    font-size: 12px;
+    color: #fff;
+    padding-left: 2%;
+    padding-top: 1%;
+    float: left;
+  }
+  .Developer {
+    font-size: 12px;
+    padding-right: 2%;
+    padding-top: 1%;
+    color: #fff;
+    float: right;
+    font-style: italic;
+  }
+}
