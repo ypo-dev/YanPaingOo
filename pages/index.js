@@ -112,7 +112,7 @@ const Home = () => {
             className="col-lg-6 col-md-12 col-sm-12 text-center"
           >
             
-              <img src={AboutImg.src} className="aboutImg img-fluid" alt="..." />
+              <img src={AboutImg.src} className="aboutImg img-fluid" alt="YanPaingOo" />
           
             <div className="flex-container text-center">
               <div className="IconCenter">
