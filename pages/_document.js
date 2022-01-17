@@ -11,9 +11,14 @@ class MyDocument extends Document {
 
             <Html lang="en">
                 <Head>
+                    <title>Yan Paing Oo - Freelance Web Developer</title>
                     <meta name="title" content="Yan Paing Oo Developer" />
                     <meta name="description" content="Freelance web developer" />
-                    <meta name="keywords" content="php,laravel, react,web,website,freelance,developer,development,yanpaingoo,YanPaingOo,Yan Paing Oo,html,css,javascript,nextjs" />
+                    <meta name="keywords" content="yanpaingoo,YanPaingOo,Yan Paing Oo,php,laravel, react,web,website,freelance,developer,development,html,css,javascript,nextjs" />
+                    <meta property="og:title" content="Freelance web developer" />
+                    <meta property="og:description" content="Freelance web developer" />
+                    <meta property="og:url" content="https://yanpaingoo.dev/" />
+                    <meta property="og:type" content="website" />
                     <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
                     <meta name="language" content="English" />
                     <meta name="author" content="YanPaingOo" />
