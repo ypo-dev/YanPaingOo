@@ -203,7 +203,7 @@ const Home = () => {
                 alt="Portfolio"
               />
               <div className="card-body">
-                <p className="card-text">Portfoloi <a className="ViewLink" rel="noreferrer" target="_blank" href="http://yanpaingoo.dev/">view</a></p>
+                <p className="card-text">Portfolio <a className="ViewLink" rel="noreferrer" target="_blank" href="http://yanpaingoo.dev/">view</a></p>
               </div>
             </div>
           </div>
